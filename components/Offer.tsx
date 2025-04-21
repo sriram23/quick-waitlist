@@ -16,18 +16,18 @@ const CardHeader = ({
     <div className="p-5 divide-y divide-[#F0E4D2]">
       <div className="space-y-6 pb-5">
         <div className="space-y-2">
-          {price && discount && (
-            <div className="text-orange-500 font-medium">
-              Limited Time Offer
-            </div>
-          )}
+          {/* {price && discount && ( */}
+          <div className="text-orange-500 font-medium">
+            Limited Time Free Offer
+          </div>
+          {/* )} */}
           <h2 className="md:text-2xl text-xl font-semibold">{title}</h2>
         </div>
 
         {price && discount && (
           <div className="inline-block bg-gray-200 rounded-lg px-3 py-1">
-            <span className="text-xl font-semibold">${discount}</span>{" "}
-            <span className="text-gray-500">instead of ${price}</span>
+            <span className="text-xl font-semibold">{discount}</span>{" "}
+            <span className="text-gray-500">{price}</span>
           </div>
         )}
         <div className="border-t border-[#F0E4D2]"></div>
