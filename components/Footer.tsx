@@ -1,5 +1,5 @@
-import { Github, Linkedin, X, Twitter } from "lucide-react";
 import Link from "next/link";
+import { FaXTwitter } from "react-icons/fa6";
 const LinkedinLink =
   process.env.NEXT_PUBLIC_LINKEDIN || "https://www.linkedin.com/";
 const TwitterLink = process.env.NEXT_PUBLIC_TWITTER || "https://www.x.com/";
@@ -9,7 +9,7 @@ const CardFooter = () => {
   return (
     <div className="pt-4 space-y-2">
       <div className="text-[#B1ACA4] text-[12px]">
-        we care about your data in our{" "}
+        We care about your data in our{" "}
         <Link
           href="/privacy-policy"
           className="underline transition-all duration-200 hover:text-black/70"
@@ -31,7 +31,7 @@ const CardFooter = () => {
           target="_blank"
           className="flex h-8 w-8 items-center justify-center rounded-lg bg-gray-50 text-gray-600 shadow transition duration-200 ease-linear hover:bg-gray-100 hover:text-gray-500 hover:shadow-none"
         >
-          <X size={22} />
+          <FaXTwitter />
         </Link>
         {/* <Link
           href={GithubLink}
