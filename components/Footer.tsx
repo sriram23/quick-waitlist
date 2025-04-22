@@ -31,7 +31,7 @@ const CardFooter = () => {
           target="_blank"
           className="flex h-8 w-8 items-center justify-center rounded-lg bg-gray-50 text-gray-600 shadow transition duration-200 ease-linear hover:bg-gray-100 hover:text-gray-500 hover:shadow-none"
         >
-          <Twitter size={22} />
+          <X size={22} />
         </Link>
         {/* <Link
           href={GithubLink}
