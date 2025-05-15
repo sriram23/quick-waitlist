@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft } from "lucide-react";
+import PrivacyPolicy from "./privacy";
 
 const PrivacyPolicyPage = () => {
   const siteLogo =
@@ -9,7 +10,7 @@ const PrivacyPolicyPage = () => {
     "https://res.cloudinary.com/dyv1yduua/image/upload/v1733392810/speaker_oiuezn.svg";
 
   return (
-    <section className="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-2">
+    <section className="w-full h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-2">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={siteLogo}
@@ -23,9 +24,10 @@ const PrivacyPolicyPage = () => {
               Privacy Policy
             </h1>
           </div>
-          <p className="text-black/70 font-normal mb-6">
-            {process.env.NEXT_PUBLIC_PRIVACY || "Add Privacy Policy From ENV"}
-          </p>
+          {/* <p className="text-black/70 font-normal mb-6"> */}
+            {/* {process.env.NEXT_PUBLIC_PRIVACY || "Add Privacy Policy From ENV"} */}
+            <PrivacyPolicy/>
+          {/* </p> */}
           <Link href="/">
             <Button variant="link">
               <ChevronLeft
